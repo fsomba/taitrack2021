@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.darajalab.TaiTrack">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- restrict application download to devices that have a camera -->
+    <uses-feature
+        android:name="android.hardware.camera.any"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/kasukupro_icon"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/kasukupro_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <!-- restrict camera to Potrait Mode -->
+        <activity android:name="com.darajalab.TaiTrack.CameraTakePhoto"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="com.darajalab.TaiTrack.UnitDetails" />
+        <activity android:name="com.darajalab.TaiTrack.StudentLogin">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.darajalab.TaiTrack.StudentHome" />
+        <activity android:name="com.darajalab.TaiTrack.StudentRegistration" />
+
+        <activity
+            android:name="com.darajalab.TaiTrack.CameraHome"
+             />
+        <activity android:name="com.darajalab.TaiTrack.CameraDraw" />
+
+    </application>
+
+</manifest>

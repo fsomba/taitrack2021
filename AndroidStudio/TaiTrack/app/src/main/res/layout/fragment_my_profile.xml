@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".FragmentMyProfile">
+
+    <ImageView
+        android:id="@+id/image_student"
+        android:layout_width="300dp"
+        android:layout_margin="20dp"
+        android:layout_height="300dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        android:id="@+id/btnUpdatePhoto"
+        android:layout_marginStart="0dp"
+        android:textSize="15sp"
+        android:text="Update Photo"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:minHeight="60dp"
+        android:minWidth="250dp"
+        android:max="100"
+        android:indeterminate="true"
+        android:progress="1" />
+
+    <TextView
+        android:id="@+id/txt_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:text="...uploading photo..."/>
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".FragmentAttendance">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_attendance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/txt_no_attendance"
+        android:layout_width="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginTop="80dp"
+        android:padding="20dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="No Attendance Record Found For This Unit..."
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
