@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.darajalab.TaiTrackLec">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/kasukulec_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/kasukulec_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="m">
+        <activity android:name="com.darajalab.TaiTrackLec.UnitDetails"></activity>
+        <activity android:name="com.darajalab.TaiTrackLec.MyUnits" />
+        <activity android:name="com.darajalab.TaiTrackLec.AddUnits" />
+        <activity android:name="com.darajalab.TaiTrackLec.LecHome" />
+        <activity android:name="com.darajalab.TaiTrackLec.LecRegistration" />
+        <activity android:name="com.darajalab.TaiTrackLec.LecLogin">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
